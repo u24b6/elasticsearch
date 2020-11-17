@@ -230,7 +230,7 @@ metric must be configured. Acceptable metrics are `min`,`max`,`sum`,`avg`, and
 iteration of the rollup indexer. A larger value tends to execute faster, but
 requires more memory during processing. This value has no effect on how the data
 is rolled up; it is merely used for tweaking the speed or memory cost of
-the indexer.
+the indexer. Must be less than or equal to 10000.
 
 `rollup_index`::
 (Required, string) The index that contains the rollup results. The index can
